@@ -7,9 +7,9 @@ Follow these steps:
     * Remove all permissions on tables in this database from the role `public`
     * Give the `usage` permission on tables in this database back to the role `public`
     * Change the default privileges for your database superuser to grant insert, select, update, and delete rights to `galvanize_admin` on tables
-    * Change the default prilileges for your database superuser to grant all privileges on sequences to `galvanize_admin`
+    * Change the default privileges for your database superuser to grant all privileges on sequences to `galvanize_admin`
 
-Dump the roles the `pg_dumpall -r` command and overwite `database_roles.sql` with it.
+Dump the roles the `pg_dumpall -r` command and overwrite `database_roles.sql` with it.
 
 * Create a new table called `User` with the following properties (use appropriate data types):
     * `id`
